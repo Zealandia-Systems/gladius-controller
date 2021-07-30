@@ -49,7 +49,9 @@ class Controller {
         'workflow:state': [],
         'controller:settings': [],
         'controller:state': [],
-        'message': []
+        'message': [],
+        'prompt:open': [],
+        'record': []
     };
 
     context = {
