@@ -1,6 +1,6 @@
 {
   "name": "@zealandia-systems/gladius-controller",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A controller library for event-based communication between client and Gladius server.",
   "main": "lib/index.js",
   "scripts": {
