@@ -139,13 +139,15 @@ class Controller {
         });
 
         this.socket.on('startup', (data) => {
-            const { loadedControllers, baudrates, ports } = { ...data };
+            const { loadedControllers, baudrates, ports, serverVersion, postProcessorVersion } = { ...data };
 
             this.loadedControllers = ensureArray(loadedControllers);
 
             // User-defined baud rates and ports
             this.baudrates = ensureArray(baudrates);
             this.ports = ensureArray(ports);
+            this.serverVersion = serverVersion;
+            this.postProcessorVersion = postProcessorVersion;
 
             if (next) {
                 next(null);
