@@ -51,7 +51,8 @@ class Controller {
         'controller:state': [],
         'message': [],
         'prompt:open': [],
-        'record': []
+        'record': [],
+        'export': []
     };
 
     context = {
